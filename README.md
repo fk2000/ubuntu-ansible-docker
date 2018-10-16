@@ -4,7 +4,8 @@ How to build Ubuntu on Vagrant on Mac and provision Docker on guest OS.
 
 ## Getting Started
 
-Vagrant, Ubuntu16.04, ansible
+- MacOS, Vagrant
+- Ubuntu16.04
 
 ### Prerequisites
 
@@ -24,7 +25,7 @@ $ exit
 host(Mac)
 $ git clone ubuntu-ansible-docker.git
 $ cd ubuntu-ansible-docker
-$ hostname > hosts
+$ echo {guest hostname} > hosts
 $ vagrant up
 $ ansible-playbook -i hosts playbook.yml
 ```
